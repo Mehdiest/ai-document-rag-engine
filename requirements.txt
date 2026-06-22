@@ -1,7 +1,16 @@
-fastapi
-uvicorn
-python-multipart
-pydantic
-python-dotenv
-openai
-pymupdf
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+python-multipart==0.0.9
+
+pymupdf==1.24.9
+python-docx==1.1.2
+
+pydantic==2.7.1
+
+# Optional AI layer (safe fallback)
+openai==1.40.0
+
+# OCR (only if version 2 supports images/scans)
+pytesseract==0.3.10
+Pillow==10.3.0
